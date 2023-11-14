@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     background: #102526FF;
@@ -40,7 +41,6 @@ body{
     font-size: 25px;
     padding: 0 10px;
     font-weight: bold;
-    font-family: 'Poppins', sans-serif;
 }
 .button{
     width: 12%;
@@ -55,7 +55,6 @@ body{
     border: none;
     outline: none;
     font-size: 20px;
-    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     background: transparent;
     color: white;
@@ -65,4 +64,42 @@ body{
     height: 540px;
     background: white;
     border: 1px solid black;
+    overflow-y: scroll;
+}
+.fetureList{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30px;
+}
+.fetureList li {
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+    padding: 0 10px;
+}
+.fetureList #checked,#delete{
+    position: absolute;
+    width: 25px;
+    height: 80%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 12px;
+}
+.fetureList #checked{
+    right: 45px;
+}
+.fetures::-webkit-scrollbar{
+    width: 5px;
+}
+.list{
+    display: flex;
+    align-items: center;
+    background: skyblue;
+    margin: 3px 0;
+    border: 1px solid black;
+    border-left: none;
 }
